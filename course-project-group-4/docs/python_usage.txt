@@ -1,0 +1,14 @@
+To run pytest:
+python -m pytest
+
+To generate pydocs, navigate to folder and run:
+pydoc -w ./*
+
+Using pytest & coverage - may want to install VScode extension "Open In Default Browser"
+cd to folder containing tests (example: gpa_disparity_py/network)
+$ coverage run -m pytest
+$ coverage html
+coverage document will be in htmlcov/index.html
+
+Pydantic - data validation, conversion, sanitizing
+API can be done using FastAPI (which is related to pydantic)

@@ -1,0 +1,18 @@
+API for course information
+https://courses.illinois.edu/cisapp/
+
+CSV of course catalog from Wade Fagen
+https://github.com/wadefagen/datasets/tree/master/course-catalog
+
+Geneds to scrape from using beautiful soup.  The ones from wade are outdated (2019)
+https://courses.illinois.edu/gened/DEFAULT/DEFAULT
+https://courses.illinois.edu/gened/
+(can optionally add year after gened/ in the above link.  Example: /gened/2019/summer)
+
+GPA catalog:
+https://github.com/wadefagen/datasets/tree/master/gpa
+
+Git limits users to 60 API requests per hour if not authenticated.  5000 / hr if authenticated.
+Check number of git requests remaining (uses a git request):
+curl -I https://api.github.com/users/octocat/orgs
+curl -I --header "Authorization: token $GITHUB_PAT" https://api.github.com/users/octocat/orgs
